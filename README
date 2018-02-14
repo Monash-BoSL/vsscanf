@@ -1,0 +1,3 @@
+Simple standalone vsscanf/scanf for cOSiris or embedded devices.
+It does not yet support floating point numbers.
+
