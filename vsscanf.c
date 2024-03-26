@@ -329,6 +329,7 @@ int vsscanf(const char *str, const char *fmt, va_list ap)
                 }
                 ptr = va_arg(ap, void *);
                 get_str(&str, ptr, set, width);
+                n++;
             } else if ('%' == *fmt) {
                 state = S_DEFAULT;
                 if (*str != '%')
