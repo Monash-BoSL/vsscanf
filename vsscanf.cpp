@@ -26,11 +26,11 @@
  * THE SOFTWARE.
  */
 
-#include <stddef.h>     /* size_t */
-#include <stdarg.h>     /* va_args */
-#include <string.h>     /* memset, strchr */
-#include <assert.h>
-#include <ctype.h>
+#include "stddef.h"     /* size_t */
+#include "stdarg.h"     /* va_args */
+#include "string.h"     /* memset, strchr */
+#include "assert.h"
+#include "ctype.h"
 
 #ifndef isdigit
 #define isdigit(c) (c >= '0' && c <= '9')
