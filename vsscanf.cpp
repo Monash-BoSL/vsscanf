@@ -129,8 +129,8 @@ static long long get_int(const char **str, int width, int base, int sign)
 
     for (n = 0; **str; (*str)++) {
         c = **str;
-        if (sign && neg == 0 && base == 10 && c == '-') {
-            neg = 1;
+        if (n == 0 && sign && neg == 0 && base == 10 && (c == '-' || c == '+')) {
+            if(c == '-'){neg = 1;}
             if (w) width--;
             continue;
         }
